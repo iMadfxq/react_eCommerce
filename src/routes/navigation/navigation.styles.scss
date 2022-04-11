@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  height: 80px;
+}
+.header--links {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
