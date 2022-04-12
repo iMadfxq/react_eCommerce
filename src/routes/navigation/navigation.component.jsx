@@ -12,6 +12,9 @@ const Navigation = () => {
           <CrownLogo />
         </Link>
         <div className="header--links">
+          <Link to={'/signin'}>
+            SignIn
+          </Link>
           <Link to={'/shop'}>
             shop
           </Link>

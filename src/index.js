@@ -5,9 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
+//any component in which we want to use routing should be wrapped by the BrowserRouter
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter> 
       <App />
     </BrowserRouter>
   </React.StrictMode>,

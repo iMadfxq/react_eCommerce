@@ -7,6 +7,11 @@ header {
 }
 .header--links {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   font-size: 1.8rem;
+  width: 400px;
+  a {
+    
+  }
 }
