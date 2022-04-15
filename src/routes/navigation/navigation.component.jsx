@@ -12,7 +12,7 @@ const Navigation = () => {
           <CrownLogo />
         </Link>
         <div className="header--links">
-          <Link to={'/signin'}>
+          <Link to={'/auth'}>
             SignIn
           </Link>
           <Link to={'/shop'}>
