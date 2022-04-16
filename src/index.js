@@ -4,12 +4,15 @@ import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { UserProvider } from "./contexts/user.context";
 
 //any component in which we want to use routing should be wrapped by the BrowserRouter
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter> 
-      <App />
+    <BrowserRouter>
+      <UserProvider>
+        <App />
+      </UserProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
