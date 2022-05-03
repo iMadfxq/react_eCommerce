@@ -7,8 +7,9 @@ import { BrowserRouter } from "react-router-dom";
 import { UserProvider } from "./contexts/user.context";
 import { ProductsProvider } from "./contexts/products.context";
 import { createRoot } from "react-dom/client";
+import { CartProvider } from "./contexts/cart.context";
 
-const container = document.getElementById("root")
+const container = document.getElementById("root");
 const root = createRoot(container);
 
 //any component in which we want to use routing should be wrapped by the BrowserRouter
@@ -16,11 +17,13 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <UserProvider>
-        <ProductsProvider>
-          <App />
-        </ProductsProvider>
-      </UserProvider>
+        <UserProvider>
+          <ProductsProvider>
+      <CartProvider>
+            <App />
+      </CartProvider>
+          </ProductsProvider>
+        </UserProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
