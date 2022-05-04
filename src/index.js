@@ -17,13 +17,13 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-        <UserProvider>
-          <ProductsProvider>
-      <CartProvider>
+      <UserProvider>
+        <ProductsProvider>
+          <CartProvider>
             <App />
-      </CartProvider>
-          </ProductsProvider>
-        </UserProvider>
+          </CartProvider>
+        </ProductsProvider>
+      </UserProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
